@@ -1,33 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 14 (app router) + Shadcn UI
+
+This is a personal project boilerplate that embraces Next.js app router, streaming render method, Shadcn UI and atomic design methodology.
+And of course, it is TypeScript!
 
 ## Getting Started
 
-First, run the development server:
+- Clone the project to your local.
+- Install dependencies.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm run install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Spin up the JSON Server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+json-server --watch ./_data/db.json --port 4000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Run the development server:
 
-## Learn More
+```bash
+pnpm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Shadcn UI: A reusable UI component collection
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
+
+Shadcn UI takes a different approach from other UI and component libraries like Material UI and Chakra UI. Where those libraries offer access to components through their bundled packages, Shadcn UI does something different and instead allows you to download the source code for individual UI components into your codebase. [Introducing Shadcn UI: A reusable UI component collection](https://blog.logrocket.com/shadcn-ui-reusable-ui-component-collection/)
+
+## Helpful resources
+
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Component Streaming Method](https://nextjs.org/learn/dashboard-app/streaming)
+- [React Suspense](https://react.dev/reference/react/Suspense)
+- [Atomic Design Methodology](https://bradfrost.com/blog/post/atomic-web-design/)
 
 ## Deploy on Vercel
 
